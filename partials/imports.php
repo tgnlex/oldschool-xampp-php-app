@@ -13,8 +13,6 @@
 <script src=" https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js "></script>
           <!--- Feather Icons --->
 <script src="https://unpkg.com/feather-icons"></script>
-          <!--- D3 Visualization --->
-<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <!------------- MY SCRIPTS ------------->
 <script type="module" src="../src/js/setClock.js"></script>
 

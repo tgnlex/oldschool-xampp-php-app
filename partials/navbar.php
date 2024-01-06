@@ -22,17 +22,18 @@
           </ul>
         </li>
       </ul>
-      <ul class="navbar-nav">
-      <li class="nav-item">
+      <ul class="navbar-nav" id="nav-login">
+        <li class="nav-item">
           <a class="nav-link" href="login.php">Login</a>
-        </li>
-        </ul>
+        </li>      
+      </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      <div id="clock"></div>
-    </div>
+
+    </div>    
+    <div id="clock"></div>
   </div>
 </nav>
-<script type="module" src="../src/js/setClock.js"></script>
+<link rel="stylesheet" href="../style/navbar.css" />

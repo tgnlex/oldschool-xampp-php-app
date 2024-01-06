@@ -1,0 +1,11 @@
+#clock {
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-left: 15px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+}
+#nav-login {
+    margin-right: 15px;
+}
