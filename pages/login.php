@@ -1,3 +1,4 @@
+<?php include '../server/login_validator.php' ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,9 +13,10 @@
     <h1>User Login</h1>    
     <form
       id="login"
-      class="auth-form login" 
-      action="<?php $_PHP_SELF ?>" 
-      method="POST">
+      class="auth-form login"   
+      method="POST"
+      action="../src/php/login_handler.php" 
+    >
         Username: <input 
           id="login-email"
           class="form-control auth email"

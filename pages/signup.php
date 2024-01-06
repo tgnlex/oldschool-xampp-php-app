@@ -13,7 +13,7 @@
     <form
       id="signup"
       class="auth-form signup" 
-      action="<?php $_PHP_SELF ?>" 
+      action="../src/php/signup_handler.php" 
       method="POST"
     > 
     

@@ -31,6 +31,8 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+      <div id="clock"></div>
     </div>
   </div>
 </nav>
+<script type="module" src="../src/js/setClock.js"></script>
