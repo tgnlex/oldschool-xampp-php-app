@@ -1,9 +1,9 @@
 <html>
 <head>
-<?php include '../partials/head.php' ?>
+<?php include '../partials/global/head.php' ?>
 </head>
 <body>
-<?php include '../partials/navbar.php' ?>
+<?php include '../partials/global/navbar.php' ?>
 <h3>
     Search Users
 <span class="htmx-indicator">Searching...</span>
@@ -11,7 +11,7 @@
 <input id="search-users" 
       class="form-control" type="search"
        name="search" placeholder="Begin Typing to search Users..."
-       hx-post="../data/users.php"
+       hx-post="..partials/data/users.php"
        hx-trigger="keyup changed delay:500ms, search"
        hx-target="#search-results"
        hx-indicator=".htmx-indicator">
@@ -25,6 +25,6 @@
     </thead>
     <tbody id="search-results"></tbody>
 </table>
-<?php include '../partials/imports.php' ?>
+<?php include '../partials/global/imports.php' ?>
 </body>
 </html>

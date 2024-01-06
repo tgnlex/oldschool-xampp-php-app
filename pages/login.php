@@ -1,45 +1,16 @@
-<?php include '../server/login_validator.php' ?>
 <!doctype html>
 <html lang="en">
 <head>
     <title>Login</title>
-    <?php include '../partials/head.php' ?>     
+    <?php include '../partials/global/head.php' ?>     
 </head>
 <body>
   <header>
-    <?php include '../partials/navbar.php' ?>
+    <?php include '../partials/global/navbar.php' ?>
   </header> 
   <div id="main" class="container">
     <h1>User Login</h1>    
-    <form
-      id="login"
-      class="auth-form login"   
-      method="POST"
-      action="../src/php/login_handler.php" 
-    >
-        Username: <input 
-          id="login-email"
-          class="form-control auth email"
-          name="email"
-          type="text"
-          placeholder="Enter your Email..."
-          required
-        />
-        Password: <input 
-          id="login-password"
-          class="form-control auth password"
-          name="password"
-          type="password"
-          placeholder="Enter your password..."
-          required
-        /> 
-        <input           
-          id="submit-signup" 
-          class="btn btn-submit btn-login" 
-          type="submit" 
-          value="Login"
-        />
-    </form>
+    <?php include '../partials/forms/login_form.php' ?>
     <div id="signup-link-area">
         <h4>Don't have an account?</h4>
         <a id="signup-link" href="./signup.php">
@@ -48,7 +19,7 @@
     </div>
   </form>
 </div>
-<?php include '../partials/imports.php' ?>
+<?php include '../partials/global/imports.php' ?>
 
 </body>
 </html>
