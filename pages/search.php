@@ -15,7 +15,16 @@
        hx-trigger="keyup changed delay:500ms, search"
        hx-target="#search-results"
        hx-indicator=".htmx-indicator">
-<div id="search-results"></div>
+
+<table class="table">
+    <thead>
+    <tr>
+    <th>Username</th>
+    <th>Email>
+    </tr>
+    </thead>
+    <tbody id="search-results"></tbody>
+</table>
 <?php include '../partials/imports.php' ?>
 </body>
 </html>
