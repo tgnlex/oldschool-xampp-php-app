@@ -8,31 +8,46 @@
   <header>
     <?php include '../partials/navbar.php' ?>
   </header> 
-  <div class="container">
+  <div id="main" class="container">
     <h1>User Signup</h1>    
-    <form action="<?php $_PHP_SELF ?>" method="POST">
+    <form
+      id="signup"
+      class="auth-form signup" 
+      action="<?php $_PHP_SELF ?>" 
+      method="POST"
+    > 
+    
         Email:  <input 
           id="signup-email"
-          class="form-control"
+          class="form-control auth email"
           name="email"
           type="text"
+          placeholder="Enter a valid email address..."
+          required
         />
         Username: <input 
           id="signup-user"
-          class="form-control"
+          class="form-control auth username"
           name="username"
           type="text"
+          placeholder="Create a username..."
+          required
         />
         Password: <input 
           id="signup-password"
-          class="form-control"
+          class="form-control auth password"
           name="password"
           type="password"
+          placeholder="Create a password..."
+          required
         /> 
         <input 
           class="btn btn-submit btn-signup" 
           id="submit-signup" 
-          type="submit" />
+          value="Create"
+          type="submit" 
+          required
+          />
   </form>
 </div>
 <?php include '../partials/imports.php' ?>
