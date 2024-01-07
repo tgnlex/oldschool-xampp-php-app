@@ -1,0 +1,42 @@
+#main {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  align-content: center;
+  height: 600px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 33%;
+}
+
+#col-1 {
+    border: 1px solid black;
+}
+#col-2 {
+    border: 1px solid black;
+
+}
+#col-3 {
+    border: 1px solid black;
+}
+
+#profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 200px;
+    border: 2px solid-black;
+}
+
+#sub-heading {
+    margin-top: 30px;
+}
+
