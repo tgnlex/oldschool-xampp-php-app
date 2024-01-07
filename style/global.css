@@ -46,6 +46,7 @@
 }
 
 #btn-counter {
+    height: 30px;
     margin-top: 50px;
     margin-bottom: 25px;
     border: 2px solid black;

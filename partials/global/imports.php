@@ -13,7 +13,7 @@
 <script src=" https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js "></script>
           <!--- Feather Icons --->
 <script src="https://unpkg.com/feather-icons"></script>
-          <!---- Socket IO ----->
+          <!---- Alpine JS ----->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 <!------------- MY SCRIPTS ------------->

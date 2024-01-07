@@ -11,7 +11,7 @@
 <input id="search-users" 
       class="form-control" type="search"
        name="search" placeholder="Begin Typing to search Users..."
-       hx-post="..partials/data/users.php"
+       hx-post="../partials/data/users.php"
        hx-trigger="keyup changed delay:500ms, search"
        hx-target="#search-results"
        hx-indicator=".htmx-indicator">
