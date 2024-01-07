@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-  <?php include '../partials/global/head.php'?>
+  <title>Upload</title>
+  <?php include '../partials/global/head.php'?>  
+  <link rel="stylesheet" href="../style/upload.css" />
 </head>
  <body>
   <?php include '../partials/global/navbar.php'?>
   <div id="main" class='container'>
-    <form 
-      id="upload-form"
-      method="post"
-      enctype="multipart/form-data"
-      action="../server/upload_handler.php">
-  
-    </form>
+    <div id="upload-container" class="form-container">
+      <h3>Upload Files To Storage</h3>
+      <?php 
+        include '../partials/forms/upload_form.php'
+      ?>
+    </div>
+    <?php include '../partials/global/imports.php'?>
   </div>
-  <?php include '../partials/global/imports.php'?>
- </body>
+</body>
 </html>
