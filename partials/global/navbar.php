@@ -33,4 +33,4 @@
     <div id="clock"></div>
   </div>
 </nav>
-<link rel="stylesheet" href="../style/navbar.css" />
+<link rel="stylesheet" href="../src/style/navbar.css" />

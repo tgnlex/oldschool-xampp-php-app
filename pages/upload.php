@@ -3,7 +3,7 @@
 <head> 
   <title>Upload</title>
   <?php include '../partials/global/head.php'?>  
-  <link rel="stylesheet" href="../style/upload.css" />
+  <link rel="stylesheet" href="../src/style/upload.css" />
 </head>
  <body>
   <?php include '../partials/global/navbar.php'?>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <?php include '../partials/global/head.php' ?>
-<link type="text/css" rel="stylesheet" href="../style/dashboard.css" />
+<link type="text/css" rel="stylesheet" href="../src/style/dashboard.css" />
 </head>
 <body>
 <?php include '../partials/global/navbar.php' ?>	

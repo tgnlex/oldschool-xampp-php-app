@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="./style/index.css" />
+  <link rel="stylesheet" href="./src/style/index.css" />
   <title>...</title>
   <meta http-equiv="refresh" content="0;url=http://localhost/website/pages/home.php"/>
 </head>
