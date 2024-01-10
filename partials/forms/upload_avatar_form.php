@@ -1,7 +1,7 @@
 <form 
   id="avatar-form"
   class="file-form avatar-form"
-  action="../server/avatar_handler.php"
+  action="../src/php/avatar_handler.php"
   method="post"
   enctype="multipart/form-data"
 >

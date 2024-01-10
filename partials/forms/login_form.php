@@ -2,7 +2,7 @@
       id="login"
       class="auth-form login"   
       method="POST"
-      action="../server/login_handler.php" 
+      action="../src/php/login_handler.php" 
     >
         Username: <input 
           id="login-email"

@@ -8,11 +8,12 @@ if (isset($_POST["submit"])) {
   $validate_avatar = getimagesize($_FILES["new_avatar"]["tmp_name"]);
   if($validate_avatar !== false) {
 	echo "Image detected - " . $validate_avatar["mime"] . ".";
-	echo "Uploading Avatar..."
-	$uploadOk = 1; 
+	echo "Uploading Avatar...";
+	$upload_success = 1;
   } else {
-  	echo "Error: Please select a valid image file.";
-  	$uploadOk = 0 
+	echo "Error: Please select a valid image file.";
+  	return $upload_success = 0; 
   }
+  
 }
 ?>

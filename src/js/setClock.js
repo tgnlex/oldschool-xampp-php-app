@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function timestamp() {
     $.ajax({
-        url: 'http://localhost/website/server/time.php',
+        url: 'http://localhost/website/src/php/time.php',
         success: function(data) {
             $('#clock').html(data);
         },

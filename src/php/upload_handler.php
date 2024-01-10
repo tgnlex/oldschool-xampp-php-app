@@ -7,8 +7,11 @@
   	if(file_exists($target_file)) {
   		echo "Sorry, file already exists.";
   	}
-  }
-  $
+    else {
+      echo "Uploading...";
+    }
+  };
+  
 
 
 ?>

@@ -1,7 +1,7 @@
 <form
       id="signup"
       class="auth-form signup" 
-      action="../server/signup_handler.php" 
+      action="../src/php/signup_handler.php" 
       method="POST"
     > 
     

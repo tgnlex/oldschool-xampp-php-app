@@ -3,7 +3,7 @@
   class="file-form storage-form"
   method="post"
   enctype="multipart/form-data"
-  action="../server/upload_handler.php">
+  action="../src/php/upload_handler.php">
   <label for="uploaded_file">
     Select a file to upload: 
   </label>
