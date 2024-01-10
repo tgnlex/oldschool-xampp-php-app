@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
     $uploadOk = 0;
   } else {  
     if($validate_avatar !== false) {
-
+	  
 		// SUCCESS CODE GOES HERE //
 
 	  echo "Image detected - " . $validate_avatar["mime"] . ".";
@@ -24,6 +24,17 @@ if (isset($_POST["submit"])) {
 	  echo "Error: Please select a valid image file.";
   	  $uploadOk = 0; 
 	};
-  }
-}
+  };
+};
+if ($uploadOk == 0) {
+	echo "Sorry your file was not uploaded. 
+		  Please ensure you are using a 
+		  valid Image file.";
+} else {
+  if (move_uploaded_file($_FILES["new_avatar"]["tmp_name"], $target_file)) {
+		echo "The file ". htmlspecialchars( basename( $_FILES["new_avatar"]["name"])). " has been uploaded";
+  } else {
+		echo "Sorry, an error ocurred while trying to upload your avatar.";
+	};
+};
 ?>
