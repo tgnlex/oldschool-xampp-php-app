@@ -1,12 +1,12 @@
 <?php 
-$username ="";
-$email = "";
-$password = "";
+$email = $username = $password = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = email_filter(sanitize_input($_POST["email"]));
   $password = sanitize_input($_POST["password"]);
   $username = sanitize_input($_POST["username"]);
+  $accounts_file = fopen("users.csv", "w")
+  $account_data = 
 }
 
 function sanitize_input($data) {
@@ -17,7 +17,7 @@ function sanitize_input($data) {
 }
 
 function email_filter($data) {
-  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  if (!filter_var($data, FILTER_VALIDATE_EMAIL)) {
     $emailErr = "Invalid email format";
   }
   return $data;
