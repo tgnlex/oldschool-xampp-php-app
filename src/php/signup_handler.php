@@ -1,13 +1,26 @@
 <?php 
 $email = $username = $password = "";
+$dbserver = "localhost";
+$dbuser = "root";
+$dbpass="";
+$dbname = "myappdb";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = email_filter(sanitize_input($_POST["email"]));
+  $email = sanitize_input(email_filter($_POST["email"]));
   $password = sanitize_input($_POST["password"]);
   $username = sanitize_input($_POST["username"]);
-  $accounts_file = fopen("users.csv", "w")
-  $account_data = 
+  $conn = new mysqli($dbserver, $dbuser, $dbpass, $dbname);
+  $sql="INSERT INTO accounts".
+  "(username, email, password)".
+  "VALUES"."('$username','$email','$password')";
+  if ($conn->query($sql) === TRUE) {
+    echo "Database updated successfully";
+  } else {
+    echo "Error updating database";
+  }
+  $conn->close();
 }
+ 
 
 function sanitize_input($data) {
     $data = trim($data);
