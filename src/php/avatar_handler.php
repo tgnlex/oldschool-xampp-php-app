@@ -10,7 +10,7 @@ if (isset($_POST["submit"])) {
     echo "Sorry, only JPG andNGs are allowed files are allowed.";
     $uploadOk = 0;
   } else {  
-    if($validate_avatar !== false) {
+    if(svalidate_avatar !== false) {
 	  
 		// SUCCESS CODE GOES HERE //
 

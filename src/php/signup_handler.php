@@ -1,15 +1,15 @@
 <?php 
 $email = $username = $password = "";
-$dbserver = "localhost";
-$dbuser = "root";
-$dbpass="";
-$dbname = "myappdb";
+$DB_HOST = "localhost";
+$DB_USER = "root";
+$DB_PASS="";
+$DB_USER = "myappdb";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = sanitize_input(email_filter($_POST["email"]));
   $password = sanitize_input($_POST["password"]);
   $username = sanitize_input($_POST["username"]);
-  $conn = new mysqli($dbserver, $dbuser, $dbpass, $dbname);
+  $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
   $sql="INSERT INTO accounts".
   "(username, email, password)".
   "VALUES"."('$username','$email','$password')";

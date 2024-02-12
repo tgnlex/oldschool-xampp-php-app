@@ -9,7 +9,13 @@
     <?php include '../partials/global/navbar.php' ?>
   </header> 
   <div id="main" class="container mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <h1>Welcome</h1>
+    <?php 
+    session_start();
+     if (!isset($_SESSION['loggedin'])) {
+      echo 'Welcome '. $_SESSION['user'] . '!'; 
+     }
+    ?>
+
     <h2>This is my PHP Sandbox Project</h2>
       <button _="on click increment :x then put it into #count-target" id="btn-counter">
         Click Here!

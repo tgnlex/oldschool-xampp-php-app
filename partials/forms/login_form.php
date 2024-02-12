@@ -21,9 +21,9 @@
           required
         /> 
         <input           
-          id="submit-signup" 
+          id="submit-login" 
           class="btn btn-submit btn-login" 
           type="submit" 
-          value="Login"
+          value="login"
         />
     </form>
